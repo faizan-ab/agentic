@@ -70,7 +70,7 @@ def get_events(namespace: str = "default") -> str:
     return result.stdout or result.stderr
 
 
-llm = ChatOllama(model="gemma4", temperature=0)
+llm = ChatOllama(model="tinyllama", temperature=0)
 tools = [
     list_containers, get_logs, inspect_container,
     list_pods, describe_pod, get_events,
