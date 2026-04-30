@@ -24,7 +24,7 @@ error = "\n".join(lines)
 print("\nThinking...\n")
 
 response = ollama.chat(
-    model="gemma4",
+    model="tinyllama",
     messages=[
         {"role": "system", "content": SYSTEM_PROMPT},
         {"role": "user", "content": error},
